@@ -35,8 +35,8 @@ social:
   email:                                # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # https://twitter.com/YasserElsnbary2      # change to your twitter homepage
-    # https://github.com/YasserElsnbary        # change to your github homepage
+       https://twitter.com/YasserElsnbary2      # change to your twitter homepage
+       https://github.com/YasserElsnbary        # change to your github homepage
     # Uncomment below to add more social links
     # https://www.facebook.com/yaseerelsnbary/
     # https://www.linkedin.com/in/yasser-elsnbary-475383159/
