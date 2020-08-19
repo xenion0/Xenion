@@ -10,12 +10,11 @@
 
 title: '0x0Kourama'                     # the main title
 
-tagline: Security Blog.  # it will display as the sub-title
+tagline: A text-focused Jekyll theme.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Security Blog of Toutorial, CTF, Bug Bounty,
+  POC, HackTheBox, tryHackMe, Vulnhub Machines.
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://yasserelsnbary.github.io'
@@ -38,8 +37,8 @@ social:
        https://twitter.com/YasserElsnbary2      # change to your twitter homepage
        https://github.com/YasserElsnbary        # change to your github homepage
     # Uncomment below to add more social links
-    # https://www.facebook.com/yaseerelsnbary/
-    # https://www.linkedin.com/in/yasser-elsnbary-475383159/
+       https://www.facebook.com/yaseerelsnbary/
+       https://www.linkedin.com/in/yasser-elsnbary-475383159/
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
