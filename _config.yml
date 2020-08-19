@@ -30,7 +30,7 @@ twitter:
   username: YasserElsnbary2             # change to your twitter username
 
 social:
-  name: YasserElsnbary                  # it will shows as the copyright owner in Footer
+  #name: YasserElsnbary                  # it will shows as the copyright owner in Footer
   email:                                # change to your email address
   links:
     # The first element serves as the copyright owner's link
