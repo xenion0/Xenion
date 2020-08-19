@@ -13,9 +13,7 @@ title: 0x0Kourama                      # the main title
 tagline: A text-focused Jekyll theme.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Security Blog for Penetesting Bug Bounty, CTF write-up, POC, HackTheBox, Vulnhub, tryHackMe.
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://yasserelsnbary.github.io'
@@ -25,10 +23,10 @@ author: Yasser Elsnbay                  # change to your full name
 avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
 github:
-  username: github_username             # change to your github username
+  username: YasserElsnbay             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: YasserElsnbay2            # change to your twitter username
 
 social:
   name: Yasser Elsnbay                  # it will shows as the copyright owner in Footer
