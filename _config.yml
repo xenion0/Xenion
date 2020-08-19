@@ -23,10 +23,10 @@ author: Yasser Elsnbay                  # change to your full name
 avatar: /assets/img/sample/avatar7.jpg  # support internet resources
 
 github:
-  username: YasserElsnbay             # change to your github username
+  username: YasserElsnbary             # change to your github username
 
 twitter:
-  username: YasserElsnbay2            # change to your twitter username
+  username: @YasserElsnbary2            # change to your twitter username
 
 social:
   name: Yasser Elsnbay                  # it will shows as the copyright owner in Footer
@@ -36,7 +36,7 @@ social:
     - https://twitter.com/YasserElsnbary2      # change to your twitter homepage
     - https://github.com/YasserElsnbary       # change to your github homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/yaseerelsnbary
+    # - https://www.facebook.com/yaseerelsnbary
     - https://www.linkedin.com/in/yasser-elsnbary-475383159
 
 google_site_verification: google_meta_tag_verification # change to your verification string
