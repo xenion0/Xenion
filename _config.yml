@@ -49,10 +49,10 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: '/0x0Kourama'
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Africa/Cairo
 
 google_analytics:
-  id: ''          # Fill with your Google Analytics ID
+  id: 'UA-167168003-1'          # Fill with your Google Analytics ID
   pv:
     # The Google Analytics pageviews switch.
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
