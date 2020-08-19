@@ -18,14 +18,6 @@
   type: rss
   icon: 'fas fa-rss'
   noblank: true
-
-# Uncomment and complete the url below to enable more contact options
-# -
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your mastodon account page
-# -
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
-# -
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
+-
+  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.linkedin.com/in/yasser-elsnbary-475383159'                  # Fill with your Linkedin homepage
