@@ -1,5 +1,5 @@
 ---
 layout: category
 title: G(old)
-category: G(old)
+category: CTF-writeup
 ---
