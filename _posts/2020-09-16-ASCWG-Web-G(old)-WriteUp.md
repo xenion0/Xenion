@@ -5,14 +5,14 @@ published: true
 
 ![](https://i.ibb.co/jLj2Jhc/110313248-2542820449361412-4064549934332186149-n.jpg)
 
-## [](#header-4)Challange Desciption:
+## [](#header-5)Challange Desciption:
 *   Difficulty: Easy
 *   Points: 300 point
 *   Category: Web
 *   Challange Link: 10.0.0.5 on LAN Network it  is not Available Online
 *   vulnerability : [SSI](https://owasp.org/www-community/attacks/Server-Side_Includes_(SSI)_Injection)
 
-## [](#header-1)Steps
+## [](#header-4)Steps
 
 *   Go to 10.0.0.5
 *   you will get this login Form 
@@ -28,7 +28,9 @@ published: true
 *   ![](https://i.ibb.co/52PGz0M/another-User.png)
 *   you will notice that file name was change again
 *   and still with shtml extension
-*   i will search about shtml
+  
+### [](#header-3)i will search about shtml:
+
 *   ![](https://i.ibb.co/yyh997T/search-shtml.png)
 *   open first [link](https://www.computerhope.com/jargon/s/shtml.htm) and read it
 *   ![](https://i.ibb.co/kxWqzSh/follow-search.png)
@@ -36,6 +38,9 @@ published: true
 *   ![](https://i.ibb.co/P6SVWNh/search-ssi.png)
 *   you can using any scanner like burp scanner To be sure
 *   So i will seearch about [SSI payloads](http://marduc812.com/2018/03/24/list-of-ssi-payloads/)
+
+### [](#header-3)Exploit SSI to get the Flag:
+
 *   Fire Burp Suite and injecti payload , What Happend?
 *   ![](https://i.ibb.co/QXsqN9R/2020-09-16-20-25-43-Compat-Window.png)
 *   Click Follow Redirection
