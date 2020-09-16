@@ -9,9 +9,9 @@ published: true
 *   Difficulty: Easy
 *   Points: 300 point
 *   Category: Web
-*   vulnerability : SSI (https://owasp.org/www-community/attacks/Server-Side_Includes_(SSI)_Injection)
+*   vulnerability : [SSI](https://owasp.org/www-community/attacks/Server-Side_Includes_(SSI)_Injection)
 
-## [](#header-4)Challange Desciption:
+## [](#header-3)Steps:
 *   
 *   Points: 300 point
 *   Category:Web
