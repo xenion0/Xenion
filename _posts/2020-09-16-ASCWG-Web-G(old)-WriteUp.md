@@ -12,7 +12,7 @@ published: true
 *   Challange Link: 10.0.0.5 on LAN Network it  is not Available Online
 *   vulnerability : [SSI](https://owasp.org/www-community/attacks/Server-Side_Includes_(SSI)_Injection)
 
-## [](#header-3)Steps:
+## [](#header-1)Steps
 
 *   Go to 10.0.0.5
 *   you will get this login Form 
@@ -22,8 +22,7 @@ published: true
 *   you will get welcome message with the value of $_POST['name']
 *   ![](https://i.ibb.co/dmTx1mQ/login-admin.png)
 *   i didn't gey Anything useful
-*   <span style="color:#ce1127">Notice<span> ```ruby
-  red rectangle``` around file Name and extension ```.shmtl ```
+*   <span style="color:#ce1127">Notice<span> ```red rectangle``` around file Name and extension ```.shmtl ```
 *   return to Login Form 
 *   try Login using anything you will login i will try login with yasser:yasser or xss payload will work but not return with flag or any thing
 *   ![](https://i.ibb.co/52PGz0M/another-User.png)
