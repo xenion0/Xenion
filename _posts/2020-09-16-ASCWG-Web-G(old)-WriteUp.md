@@ -30,7 +30,7 @@ Together with my friend [Mohamed Mido](https://www.linkedin.com/in/mohammed-sher
 *   you will get welcome message with the value of $_POST['name']
 *   ![](https://i.ibb.co/dmTx1mQ/login-admin.png)
 *   i didn't gey Anything useful
-*   <span style="color:#ce1127">Notice<span> ```red rectangle``` around file Name and extension ```.shmtl ```
+*   <span style="color:#ce1127">Notice<span> ```red rectangle``` around file Name and extension ```.shtml ```
 *   return to Login Form 
 *   try Login using anything you will login i will try login with yasser:yasser or xss payload will work but not return with flag or any thing
 *   ![](https://i.ibb.co/52PGz0M/another-User.png)
