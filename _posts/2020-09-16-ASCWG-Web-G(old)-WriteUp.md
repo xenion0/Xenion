@@ -19,6 +19,9 @@ published: true
 *   After making some routing search on this page like: show source Code, Request, resopsne and Cookies i didn't find any thing can catche my attention.
 *   so,first thing I tried [deafault credentials] like admin:admin
 *   ![](https://i.ibb.co/DCZdBFd/login.png)
+*   you will get welcome message with your name
+*   ![](https://i.ibb.co/dmTx1mQ/login-admin.png)
+*   Notice red rectangle around file Name and extension ```ruby .shmtl ```
 
 
 
