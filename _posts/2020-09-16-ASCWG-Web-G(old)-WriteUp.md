@@ -5,7 +5,7 @@ published: true
 
 ![](https://i.ibb.co/jLj2Jhc/110313248-2542820449361412-4064549934332186149-n.jpg)
 
-Together with my friend (Mohamed Mido)[https://www.linkedin.com/in/mohammed-sherif-635302183/] we have been able to solve this challenge
+Together with my friend [Mohamed Mido](https://www.linkedin.com/in/mohammed-sherif-635302183/) we have been able to solve this challenge
 
 # [](#header-1)Challange Desciption:
 *   Difficulty: Easy
