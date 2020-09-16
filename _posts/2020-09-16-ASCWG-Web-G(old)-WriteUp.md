@@ -29,7 +29,7 @@ published: true
 *   you will notice that file name was change again
 *   and still with shtml extension
   
-```## [](#header-4)i will search about shtml```
+# [](#header-4)i will search about shtml
 
 *   ![](https://i.ibb.co/yyh997T/search-shtml.png)
 *   open first [link](https://www.computerhope.com/jargon/s/shtml.htm) and read it
@@ -39,7 +39,7 @@ published: true
 *   you can using any scanner like burp scanner To be sure
 *   So i will seearch about [SSI payloads](http://marduc812.com/2018/03/24/list-of-ssi-payloads/)
 
-## [](#header-4)Exploit SSI to get the Flag:
+# [](#header-4)Exploit SSI to get the Flag:
 
 *   Fire Burp Suite and injecti payload , What Happend?
 *   ![](https://i.ibb.co/QXsqN9R/2020-09-16-20-25-43-Compat-Window.png)
