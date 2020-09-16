@@ -29,7 +29,7 @@ published: true
 *   you will notice that file name was change again
 *   and still with shtml extension
   
-## [](#header-4)i will search about shtml:
+```## [](#header-4)i will search about shtml```
 
 *   ![](https://i.ibb.co/yyh997T/search-shtml.png)
 *   open first [link](https://www.computerhope.com/jargon/s/shtml.htm) and read it
