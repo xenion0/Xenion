@@ -1,5 +1,8 @@
 ---
 title: ASCWG-Web-G(old)
+layout: post
+category: CTF-Writeup
+tags: [Web, SSI, ASCWG, burp]
 published: true
 ---
 
