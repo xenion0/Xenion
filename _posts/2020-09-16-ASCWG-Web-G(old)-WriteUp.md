@@ -9,13 +9,16 @@ published: true
 *   Difficulty: Easy
 *   Points: 300 point
 *   Category: Web
+*   Challange Link: 10.0.0.5 on LAN Network it  is not Available Online
 *   vulnerability : [SSI](https://owasp.org/www-community/attacks/Server-Side_Includes_(SSI)_Injection)
 
 ## [](#header-3)Steps:
-*   
-*   Points: 300 point
-*   Category:Web
 
+*   Go to 10.0.0.5
+*   you will get this login Form 
+*   After making some routing search on this page like: show source Code, Request, resopsne and Cookies i didn't find any thing can catche my attention.
+*   so,first thing I tried [deafault credentials] like admin:admin
+*   ![](https://i.ibb.co/DCZdBFd/login.png)
 
 
 
