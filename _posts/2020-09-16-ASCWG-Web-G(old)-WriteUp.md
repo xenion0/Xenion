@@ -33,10 +33,17 @@ published: true
 *   open first [link](https://www.computerhope.com/jargon/s/shtml.htm) and read it
 *   ![](https://i.ibb.co/kxWqzSh/follow-search.png)
 *   so it may be [SSI](https://owasp.org/www-community/attacks/Server-Side_Includes_(SSI)_Injection) ``` Server Side Injection ```
+*   ![](https://i.ibb.co/P6SVWNh/search-ssi.png)
 *   you can using any scanner like burp scanner To be sure
 *   So i will seearch about [SSI payloads](http://marduc812.com/2018/03/24/list-of-ssi-payloads/)
-*   Fire Burp Suite and injecti payload , What Happend? 
-*   
-
-
+*   Fire Burp Suite and injecti payload , What Happend?
+*   ![](https://i.ibb.co/QXsqN9R/2020-09-16-20-25-43-Compat-Window.png)
+*   Click Follow Redirection
+*   ![](https://i.ibb.co/0Kj4kwF/Burp.png)
+*   Bing0o0o0o0o we got flag file
+*   let's try to display this file to get the flag
+*   https://i.ibb.co/Bw3TvB8/redirect-2.png
+*   Click Follow Redirection Again 
+*   Bingo0o0o0o we Got The Flag 
+*   ![](https://i.ibb.co/7YKDR7Q/flag.png)
 
