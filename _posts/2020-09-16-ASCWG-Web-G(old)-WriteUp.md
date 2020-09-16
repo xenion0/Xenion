@@ -12,7 +12,7 @@ published: true
   - <a name="shtml">What is shtml ?</a>
   - <a name="flag">Exploit SSI to get the Flag</a>
 
-# [](#header-1)Challange Desciption: {#desc}
+# [](#header-1)Challange Desciption: (#desc)
 *   Difficulty: Easy
 *   Points: 300 point
 *   Category: Web
