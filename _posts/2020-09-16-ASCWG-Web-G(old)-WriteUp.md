@@ -1,7 +1,7 @@
 ---
 title: ASCWG-Web-G(old)
 layout: post
-categories: [CTF-Writeup, HackTheBox, POC, TryHackMe, Web-CyberTalents]
+categories: [CTF-Writeup, POC, TryHackMe, Web-CyberTalents]
 tags: [Web, SSI, ASCWG]
 toc: false
 published: true
