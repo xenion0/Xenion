@@ -1,7 +1,7 @@
 ---
 title: ASCWG-Web-G(old)
 layout: post
-categories: [Azure]
+categories: [CTF-Writeup]
 tags: [Web, SSI, ASCWG]
 toc: false
 published: true
