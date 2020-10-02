@@ -1,8 +1,9 @@
 ---
 title: ASCWG-Web-G(old)
 layout: post
-category: CTF-Writeup
+categories: [CTF-Writeup]
 tags: [Web, SSI, ASCWG]
+toc: false
 published: true
 ---
 
