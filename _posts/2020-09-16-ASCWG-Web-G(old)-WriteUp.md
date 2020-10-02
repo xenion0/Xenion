@@ -2,7 +2,7 @@
 title: ASCWG-Web-G(old)
 layout: post
 categories: [CTF-Writeup]
-tags: [Web, SSI, ASCWG]
+tags: [Web, ASCWG]
 toc: false
 published: true
 ---
