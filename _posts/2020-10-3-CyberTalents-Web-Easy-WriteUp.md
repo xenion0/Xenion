@@ -10,16 +10,16 @@ published: true
 # CyberTalents Practice
 *   Difficulty: Easy
 *   Points: 50 point
-*   Points: Web Security
+*   Category: Web Security
 
 
-# [](#header-1)01- admin has the power:
+# [](#header-1)[01- admin has the power:](https://cybertalents.com/challenges/web/admin-has-the-power)
 
 ## [](#header-4)Solution:
    
    {% include youtube.html id='RaSp-yMLIOk' %}
    
-# [](#header-1)02- this is sparta:
+# [](#header-1)[02- this is sparta:](https://cybertalents.com/challenges/web/this-is-sparta)
 
 ## [](#header-4)Solution:
 
