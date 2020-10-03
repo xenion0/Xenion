@@ -352,14 +352,14 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 .youtube-wrapper {
   position: relative;
   width: 800px;
-  height: 0;
+  height: 100px;
   padding-bottom: 56.25%;
 }
 .youtube-wrapper iframe {
   position: absolute;
   top: 0;
-  left: 100px;
-  width: 300px;
+  left: 0px;
+  width: 800px;
   height: 200px;
   border: 0;
 }
