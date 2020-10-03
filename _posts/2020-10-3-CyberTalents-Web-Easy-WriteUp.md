@@ -23,4 +23,6 @@ published: true
 
 ## [](#header-4)Solution:
 
-*   [Video Link](https://www.youtube.com/watch?v=LUUoY3kzI0Y&list=PLYp_Kd32XvcqyNt7G2_bmRrvho5MXQaSG&index=2)
+   {% include youtube.html id='LUUoY3kzI0Y' %}
+
+
