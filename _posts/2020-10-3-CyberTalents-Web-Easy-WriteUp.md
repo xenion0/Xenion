@@ -19,6 +19,8 @@ published: true
 
    [![Video](https://img.youtube.com/vi/RaSp-yMLIOk/0.jpg)](https://www.youtube.com/watch?v=RaSp-yMLIOk)
    
+   {% include youtube.html id='RaSp-yMLIOk' %}
+   
 
 
 # [](#header-1)02- this is sparta:
