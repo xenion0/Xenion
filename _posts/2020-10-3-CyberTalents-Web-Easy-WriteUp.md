@@ -24,5 +24,35 @@ published: true
 ## [](#header-4)Solution:
 
    {% include youtube.html id='LUUoY3kzI0Y' %}
+   
+# [](#header-1)[03- iam legend:](https://cybertalents.com/challenges/web/iam-legend)
+
+## [](#header-4)Solution:
+
+   {% include youtube.html id='ETUKSDEPPh8' %}
+   
+# [](#header-1)[04- cool name effect:](https://cybertalents.com/challenges/web/cool-name-effect)
+
+## [](#header-4)Solution:
+
+   {% include youtube.html id='VhCXVFfwO9A' %}
+   
+# [](#header-1)[05- encrypted database:](https://cybertalents.com/challenges/web/encrypted-database)
+
+## [](#header-4)Solution:
+
+   {% include youtube.html id='7kTIBYHpkow' %}
+   
+# [](#header-1)[06- newsletter:](https://cybertalents.com/challenges/web/newsletter)
+
+## [](#header-4)Solution:
+
+   {% include youtube.html id='pfJPe6dHD5A' %}
+   
+# [](#header-1)[07- who am i:](https://cybertalents.com/challenges/web/newsletter)
+
+## [](#header-4)Solution:
+
+   [link](https://reversec-team.blogspot.com/2018/11/hitb2018dxb-pre-conf-ctf-write-up.html)
 
 
