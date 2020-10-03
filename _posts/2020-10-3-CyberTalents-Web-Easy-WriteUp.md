@@ -16,7 +16,11 @@ published: true
 # [](#header-1)01- admin has the power:
 
 ## [](#header-4)Solution:
-   [![Alt text](https://img.youtube.com/vi/RaSp-yMLIOk/0.jpg)](https://www.youtube.com/watch?v=RaSp-yMLIOk)
+
+   [![Video](https://img.youtube.com/vi/RaSp-yMLIOk/0.jpg)](https://www.youtube.com/watch?v=RaSp-yMLIOk)
+   
+   <iframe width="420" height="315" src="http://www.youtube.com/embed/RaSp-yMLIOk" frameborder="0" allowfullscreen></iframe>
+
 
 
 # [](#header-1)02- this is sparta:
