@@ -16,7 +16,7 @@ published: true
 # [](#header-1)01- admin has the power:
 
 ## [](#header-4)Solution:
-*   [![Everything Is AWESOME]](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+*   [![Alt text](https://img.youtube.com/vi/RaSp-yMLIOk/0.jpg)](https://www.youtube.com/watch?v=RaSp-yMLIOk)
 
 *   [Video Link](https://www.youtube.com/watch?v=RaSp-yMLIOk&list=PLYp_Kd32XvcqyNt7G2_bmRrvho5MXQaSG&index=1)
 
