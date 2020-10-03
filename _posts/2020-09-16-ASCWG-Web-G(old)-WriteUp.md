@@ -1,7 +1,7 @@
 ---
 title: ASCWG-Web-G(old)
 layout: post
-categories: [Web-CyberTalents, Easy]
+categories: [CTF-Writeup]
 tags: [Web, ASCWG, CTF]
 toc: false
 published: true
