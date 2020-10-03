@@ -49,10 +49,15 @@ published: true
 
    {% include youtube.html id='pfJPe6dHD5A' %}
    
-# [](#header-1)[07- who am i:](https://cybertalents.com/challenges/web/newsletter)
+# [](#header-1)[07- who am i:](https://cybertalents.com/challenges/web/who-am-i)
 
 ## [](#header-4)Solution:
 
-   [link](https://reversec-team.blogspot.com/2018/11/hitb2018dxb-pre-conf-ctf-write-up.html)
+   {% include youtube.html id='n3AoKZCJJyA' %}
+   
+# [](#header-1)[8- blue inc:](https://cybertalents.com/challenges/web/blue-inc)
 
+## [](#header-4)Solution:
+
+   {% include youtube.html id='itiwgXWLncs' %}
 
