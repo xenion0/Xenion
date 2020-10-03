@@ -16,21 +16,9 @@ published: true
 # [](#header-1)01- admin has the power:
 
 ## [](#header-4)Solution:
+*   [![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/watch?v=RaSp-yMLIOk&list=PLYp_Kd32XvcqyNt7G2_bmRrvho5MXQaSG&index=1" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
-<object width="425" height="350">
-  <param name="movie" value="https://www.youtube.com/watch?v=RaSp-yMLIOk&list=PLYp_Kd32XvcqyNt7G2_bmRrvho5MXQaSG&index=1" />
-  <param name="wmode" value="transparent" />
-  <embed src="https://www.youtube.com/watch?v=RaSp-yMLIOk&list=PLYp_Kd32XvcqyNt7G2_bmRrvho5MXQaSG&index=1"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
-
-
-*   [Video Link]()
+*   [Video Link](https://www.youtube.com/watch?v=RaSp-yMLIOk&list=PLYp_Kd32XvcqyNt7G2_bmRrvho5MXQaSG&index=1)
 
 # [](#header-1)02- this is sparta:
 
