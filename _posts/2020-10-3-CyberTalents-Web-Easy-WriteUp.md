@@ -73,7 +73,7 @@ published: true
 
 ## [](#header-4)Solution:
 
-   {% include youtube.html id='ObVaK5jMyEw' %}
+   {% include youtube.html id='7TJx30kIvmY' %}
    
 # [](#header-1)[13- maximum courage:](https://cybertalents.com/challenges/web/maximum-courage)
 
