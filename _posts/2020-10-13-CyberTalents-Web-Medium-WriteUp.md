@@ -101,6 +101,10 @@ published: true
 
    
 
+# [](#header-1)Todo:
+
+- [The dark lord ](https://cybertalents.com/challenges/web/the-dark-lord)
+- [F2Up](https://cybertalents.com/challenges/web/f2up)
 
    
 
