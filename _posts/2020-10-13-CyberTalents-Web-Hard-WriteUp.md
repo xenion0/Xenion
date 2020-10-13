@@ -37,6 +37,12 @@ published: true
 ## [](#header-4)Solution:
    
    {% include youtube.html id='7Vl7CONbF1c' %}
+   
+# [](#header-1)Todo:
+
+- [String highlighter](https://cybertalents.com/challenges/web/string-highlighter)
+- [Space](https://cybertalents.com/challenges/web/space)
+
 
    
 
