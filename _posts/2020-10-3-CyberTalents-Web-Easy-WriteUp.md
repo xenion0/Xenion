@@ -60,4 +60,35 @@ published: true
 ## [](#header-4)Solution:
 
    {% include youtube.html id='itiwgXWLncs' %}
+   
+# [](#header-1)[09- Easy Message:](https://cybertalents.com/challenges/web/easy-message)
+
+## [](#header-4)Solution: [HERE](https://github.com/YasserElsnbary/Security/blob/master/CTFs/CyberTalents/Web/Practice/1-%20Easy/09-%20Easy%20Message.md)
+
+# [](#header-1)[11- Got Controls:](https://cybertalents.com/challenges/web/got-controls)
+
+## [](#header-4)Solution: [HERE](https://github.com/YasserElsnbary/Security/blob/master/CTFs/CyberTalents/Web/Practice/1-%20Easy/11-%20Got%20Controls.md)
+
+# [](#header-1)[12- back to basic:](https://cybertalents.com/challenges/web/back-to-basics)
+
+## [](#header-4)Solution:
+
+   {% include youtube.html id='ObVaK5jMyEw' %}
+   
+# [](#header-1)[13- maximum courage:](https://cybertalents.com/challenges/web/maximum-courage)
+
+## [](#header-4)Solution:
+
+   {% include youtube.html id='UZDB6lQvRfE' %}
+   
+# [](#header-1)[14- Easy Access:](https://cybertalents.com/challenges/web/easy-access)
+
+## [](#header-4)Solution:
+
+   {% include youtube.html id='tZjwOz8UaZo' %}
+   
+   
+
+
+   
 
