@@ -65,6 +65,10 @@ published: true
 
 ## [](#header-4)Solution: [HERE](https://github.com/YasserElsnbary/Security/blob/master/CTFs/CyberTalents/Web/Practice/1-%20Easy/09-%20Easy%20Message.md)
 
+# [](#header-1)[10- Cheers:](https://cybertalents.com/challenges/web/cheers)
+
+## [](#header-4)Solution: [HERE](https://github.com/YasserElsnbary/Security/blob/master/CTFs/CyberTalents/Web/Practice/1-%20Easy/10-%20Cheers.md)
+
 # [](#header-1)[11- Got Controls:](https://cybertalents.com/challenges/web/got-controls)
 
 ## [](#header-4)Solution: [HERE](https://github.com/YasserElsnbary/Security/blob/master/CTFs/CyberTalents/Web/Practice/1-%20Easy/11-%20Got%20Controls.md)
@@ -86,6 +90,14 @@ published: true
 ## [](#header-4)Solution:
 
    {% include youtube.html id='tZjwOz8UaZo' %}
+   
+   
+# [](#header-1)Todo:
+
+- [COMRADE III](https://cybertalents.com/challenges/web/comrade-iii)
+- [x corp](https://cybertalents.com/challenges/web/x-corp)
+- [uGame](https://cybertalents.com/challenges/web/ugame)
+- [Silly Doors](https://cybertalents.com/challenges/web/silly-doors)
    
    
 
