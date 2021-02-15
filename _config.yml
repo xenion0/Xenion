@@ -8,7 +8,7 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Kourama-InfoSec Blog                     # the main title
+title: Kourama                     # the main title
 
 tagline: Penetesting, Bug Bounty, CTF player.  # it will display as the sub-title
 
