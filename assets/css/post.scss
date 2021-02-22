@@ -60,7 +60,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
     &:hover {
       background: #000000;
       color: #fff;
-      border-color: #2a408e;
+      border-color: #00FF00;
     }
     &.disabled {
       @include btn-post-nav;
