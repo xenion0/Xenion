@@ -817,7 +817,7 @@ div.post-content .table-wrapper {
     @extend %link-color;
     @extend %link-underline;
     &:hover {
-      @extend %link-hover;
+      color: #FFFFFF !important;
     }
   }
   p {
