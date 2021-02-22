@@ -20,7 +20,7 @@
 }
 
 %link-hover {
-  color: #d2603a!important;
+  color: rgb(0, 255, 1)!important;
   border-bottom: 1px solid #ffffff;
   text-decoration: none;
 }
@@ -30,7 +30,7 @@
 }
 
 %link-underline {
-  border-bottom: 1px solid var(--link-underline-color);
+  border-bottom: none;
 }
 
 %no-bottom-border {
