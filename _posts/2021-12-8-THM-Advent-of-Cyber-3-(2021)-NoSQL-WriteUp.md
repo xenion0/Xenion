@@ -1,7 +1,7 @@
 ---
 title: THM Advent of Cyber 3 (2021) NoSQL WriteUp
 layout: post
-categories: [TryHackMe]
+categories: [TryHackMe,NoSQL]
 tags: [THM]
 toc: false
 published: true
