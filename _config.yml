@@ -8,36 +8,36 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Kourama                     # the main title
+title: Xenion                     # the main title
 
-tagline: Penetesting, Bug Bounty, CTF player.  # it will display as the sub-title
+tagline: Penetesting, Bug Bounty.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Security Blog for Penetesting Bug Bounty, CTF write-up, POC, HackTheBox, Vulnhub, tryHackMe.
+  Security Blog for Penetesting Bug Bounty, write-up, POC, HackTheBox, tryHackMe.
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://xenion0.github.io'
 
-author: Yasser Elsnbay                  # change to your full name
+author: Ahmed El-Ganainy                  # change to your full name
 
 avatar: /assets/img/sample/avatar7.jpg  # support internet resources
 
 github:
-  username: YasserElsnbary             # change to your github username
+  username: Ahmed El-Ganainy             # change to your github username
 
 twitter:
-  username: Yasser_Elsnbary            # change to your twitter username
+  username: AhmedElG7            # change to your twitter username
 
 social:
-  name: Yasser Elsnbay                  # it will shows as the copyright owner in Footer
-  email: elsnbaryyaseer@gmail.com             # change to your email address
+  name: Ahmed El-Ganainy                   # it will shows as the copyright owner in Footer
+  email: ahmmh777@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/Yasser_Elsnbary     # change to your twitter homepage
-    - https://github.com/YasserElsnbary       # change to your github homepage
+    - https://twitter.com/AhmedElG7     # change to your twitter homepage
+    - https://github.com/xenion0      # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/yaseerelsnbary
-    - https://www.linkedin.com/in/yasser-elsnbary-475383159
+    - https://www.linkedin.com/in/ahmed-mohamed-90b84b197/
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
