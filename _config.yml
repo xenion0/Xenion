@@ -20,7 +20,7 @@ url: 'https://xenion0.github.io'
 
 author: Ahmed El-Ganainy                  # change to your full name
 
-avatar: /assets/img/sample/avatar7.jpg  # support internet resources
+avatar: assets/img/sample/avatar7.jpg.jpg  # support internet resources
 
 github:
   username: Ahmed El-Ganainy             # change to your github username
