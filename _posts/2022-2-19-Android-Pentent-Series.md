@@ -1,7 +1,13 @@
-
+---
+title: Android Pentest Intro 
+layout: post
+categories: [Android]
+tags: [Android]
+toc: false
+published: true
+---
 
 # Android Pentent Series
-
 
 | Content                                                     |
 | ----------------------------------------------------------- |
