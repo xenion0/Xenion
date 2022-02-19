@@ -14,7 +14,7 @@
 | **Referance**                                            |
 
 
-## 📚 What is **APK** ?
+## What is **APK** ?
 Android applicatins are in the APK file formate.
 APK is basically ZIP file. (You can rename the file extension to .zip to open and see its contents.)
 #### What is apk components ?
