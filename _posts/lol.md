@@ -44,7 +44,9 @@ contains files related to the integrity and authenticity of the app
 3.CERT.RSA
 
 6. **res/**
+
 ![](https://i.imgur.com/AkO2dQo.png)
+
 res is where the resources of app which is not compiled to resources.arsc is stored. As you can see there are many sub folders inside it. Each folder contains different type of resources. 
 For example values folder have file   strings.xml  which have all const for app may be have api key for example  or aws Cognito
 ## Dalvik & Smali ?
@@ -77,8 +79,8 @@ content provider component supplies data from one application to others on reque
 The data may be stored in the file system, the database or somewhere else entirely.
 
 ## Tools need to setup 
-1. **Apktool**
 
+1. **Apktool**
  can use **apktool** to decode the apk and make change in smali code and then return it to apk and then signing it . 
 ![apktool](https://i.imgur.com/Yah96RP.png)
 2. **keytool & apksigner**
@@ -88,6 +90,7 @@ The data may be stored in the file system, the database or somewhere else entire
 6. **jadx-gui**
 7. **drozer**
 8. **frida**
+
 
 ## **Resourse for Android** 
 [**English playlist for basic Android**](https://www.youtube.com/playlist?list=PLa2a0gT4SdEeCoYDX-5SkmL81U7atDZVd)
