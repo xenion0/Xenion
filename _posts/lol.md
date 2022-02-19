@@ -1,11 +1,4 @@
----
-title: Android Intro | Android
-layout: post
-categories: [Web-Vulnerabilities,SQLI]
-tags: [Vulnerability,SQLI]
-toc: false
-published: true
----
+
 
 # Android Pentent Series
 
