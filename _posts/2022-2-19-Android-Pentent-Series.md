@@ -56,22 +56,22 @@ Smali is the human readable version of Dalvik bytecode. Technically, Smali and b
 
 ##  What is **Android components** ?
 
-1. **Activities** <br/>
+1. **Activities :** <br/>
 An activity is the entry point for interacting with the user.
-in-short Activity performs actions on the screen. 
-**Fragments**Represents a portion of user interface in an Activity.
-2. **Services** <br/>
+in-short Activity performs actions on the screen. <br/>
+**Fragments :** Represents a portion of user interface in an Activity.
+2. **Services :** <br/>
 A service is a component that runs in the background to perform long-running operations. For example, a service might play music in the background while the user is in a different application
-3. **Broadcast receivers** <br/>
+3. **Broadcast receivers :** <br/>
 They handle communication between Android OS and applications.
 
-4. **Content provicers** <br/>
+4. **Content provicers :** <br/>
 content provider component supplies data from one application to others on request.
 The data may be stored in the file system, the database or somewhere else entirely.
 
 ## Tools need to setup 
 
-1. **Apktool** <br/>
+1. **Apktool :** <br/>
  can use **apktool** to decode the apk and make change in smali code and then return it to apk and then signing it . <br/>
 ![apktool](https://i.imgur.com/Yah96RP.png)  <br/>
 2. **keytool & apksigner** <br/>
@@ -83,9 +83,9 @@ The data may be stored in the file system, the database or somewhere else entire
 8. **frida** <br/>
 
 
-## **Resourse for Android** 
+## **Resourse for Android :** 
 [**English playlist for basic Android**](https://www.youtube.com/playlist?list=PLa2a0gT4SdEeCoYDX-5SkmL81U7atDZVd)
-## **Labs** ?
+## **Labs :** 
 
 1. [**InjuredAndroid**](https://github.com/B3nac/InjuredAndroid) will be better if sovle lab first and then see how he solve it [**Solve**](https://docs.google.com/presentation/d/1gK2vYdvwFn8r8dSawIWRRIF4yDF4qmMY2qEelS1M7rI/edit#slide=id.p)
 2. [**Insecureshop**](https://github.com/optiv/Insecureshop)
@@ -94,7 +94,7 @@ The data may be stored in the file system, the database or somewhere else entire
 will be better if you solve labs in this order.
 
 
-## **Referance** ?
+## **Referance :** 
 1. [**Oversecured**](https://blog.oversecured.com/)
 2. [**Android Notes**](https://techvomit.net/android-security-notes/)
 3. [**awesome Android security**](https://github.com/saeidshirazi/awesome-android-security)
