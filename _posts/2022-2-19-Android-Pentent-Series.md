@@ -79,8 +79,8 @@ The data may be stored in the file system, the database or somewhere else entire
 4. **emulator** <br/>
 5. **apk studio** <br/>
 6. **jadx-gui** <br/>
-7. **drozer** <br/>
-8. **frida** <br/>
+7. **drozer** [learn drozer from here](https://book.hacktricks.xyz/mobile-apps-pentesting/android-app-pentesting/drozer-tutorial)
+8. **frida**  [learn frida](https://www.youtube.com/watch?v=iMNs8YAy6pk&ab_channel=sambal0x)
 
 
 ## **Resourse for Android :** 
