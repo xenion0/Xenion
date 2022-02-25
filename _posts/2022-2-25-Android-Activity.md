@@ -23,11 +23,11 @@ An application can have only one activity, or, like the SMS application just men
 
 Reference: http://developer.android.com/guide/components/activities.html
 
-**The life cycle**
+### The life cycle
 
 ![](https://i.imgur.com/4Ilj5v9.png)
 
-**Start method**
+### Start method
 show start
 Register components in the configruation file AndroidManifest.xml
 ```
@@ -53,7 +53,7 @@ Intent intent = new Intent(Intent.ACTION_SEND);
 intent.putExtra(Intent.EXTRA_EMAIL, recipientArray);
 startActivity(intent);
 ```
-**launch mode**
+### launch mode
 
 Activity has four loading modes:
 
@@ -68,11 +68,11 @@ The location of the setting is in the android:launchMode attribute of the activi
 Activity launch mode is used to control the creation of task and Activity instances. Default "standard" mode. Standard mode will generate a new Activity instance once it is started and will not create a new task.
  When creating a new task, the content in the intent may be read by malicious applications, so it is recommended to use the default standard mode without configuring the launch mode attribute unless there are special requirements. launchMode can be overridden by Intent flags.
  
-**Intent Selector**
+### Intent Selector
 
 When multiple activities have the same action, a selector will pop up for the user to choose when this action is called.
 
-**Permission**
+### Permission
 ```ruby=
 android:exported
 ```
@@ -123,7 +123,7 @@ Activity type and usage determine its risks and defense methods, so activities a
 
 ref http://www.jssec.org/dl/android_securecoding_en.pdf
 
-**Security advice**
+### Security advice
 
 1-The private Activity used in the app should not be configured with intent-filter. If the intent-filter is configured, the exported property needs to be set to false.  <br/>
 2-Use default taskAffinity <br/>
@@ -152,6 +152,5 @@ ref http://www.jssec.org/dl/android_securecoding_en.pdf
 * adb shell：am start -a action -n package/componet
 * drozer: run app.activity.start --action android.action.intent.VIEW ...
 * Write your own app to call startActiviy() or startActivityForResult()
-
 
 
