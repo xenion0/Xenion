@@ -1,14 +1,13 @@
 # Android Activity Security
 
 
-| Content                                                     |
-| ----------------------------------------------------------- |
-| What is **Activity** ?                                       |
-| **Knowledge points**                   |
-| **Activity classification**                                    |
-|  **Test method**                                      |
-|  **Labs**                                                 |
-| 📕 **Referance**                                            |
+|           Content           |
+|:---------------------------:|
+|   What is **Activity** ?    |
+|    **Knowledge points**     |
+| **Activity classification** |
+|       **Test method**       |
+|        **Referance**        |
 
 
 ##  What is **Activity** ?
@@ -121,8 +120,6 @@ Activity type and usage determine its risks and defense methods, so activities a
 
 ![](https://i.imgur.com/oN9l2PY.png)
 
-ref http://www.jssec.org/dl/android_securecoding_en.pdf
-
 ### Security advice
 
 1-The private Activity used in the app should not be configured with intent-filter. If the intent-filter is configured, the exported property needs to be set to false.  <br/>
@@ -140,17 +137,31 @@ ref http://www.jssec.org/dl/android_securecoding_en.pdf
 
 ## Test method
 
-### View activity:
+#### View activity:
 
 * Decompile and view the activity component in the configuration file AndroidManifest.xml (focus on those with intent-filter configured and those without export="false")
 * Open the installed app directly with RE to view the configuration file
 * Drozer scan: run app.activity.info -a packagename
 * Dynamic viewing: logcat sets the filter tag to ActivityManager
 
-### Start the activity:
+#### Start the activity:
 
 * adb shell：am start -a action -n package/componet
 * drozer: run app.activity.start --action android.action.intent.VIEW ...
 * Write your own app to call startActiviy() or startActivityForResult()
 
+
+# Referance <br/>
+[Andrid activity developer ](https://developer.android.com/reference/android/app/Activity) <br/>
+
+report example <br/>
+https://hackerone.com/reports/537670 <br/>
+
+Book Android Secure Code <br/>
+![](https://i.imgur.com/UsvXUER.png)
+
+
+
+**At the end** <br/>
+![](https://i.imgur.com/uuSwt1q.png)
 
