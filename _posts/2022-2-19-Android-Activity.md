@@ -1,12 +1,3 @@
----
-title: Android part 2 | Android
-layout: post
-categories: [Android,Activity]
-tags: []
-toc: false
-published: true
----
-
 # Android Activity Security
 
 
