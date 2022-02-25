@@ -3,16 +3,15 @@
 
 | Content                                                     |
 | ----------------------------------------------------------- |
-|  What is **Activity** ?                                       |
-| **Dalvik** & **Smali**                   |
-|What is **Android components**?                                    |
-|  tools need to setup                                 |
-|  Resourse for **Android**                                      |
+| What is **Activity** ?                                       |
+| **Knowledge points**                   |
+| **Activity classification**                                    |
+|  **Test method**                                      |
 |  **Labs**                                                 |
 | 📕 **Referance**                                            |
 
 
-##  What is **APK** ?
+##  What is **Activity** ?
 Each Android Application is composed of basic Android components such as Activity, Service, content Provider, and Broadcast Receiver. Among them, Activity is the main body of the application. It undertakes a lot of display and interaction work, and can even be understood as an "interface" "It's just an Activity.</br>
 
 Activity is a visual user interface displayed for user actions. For example, an activity can display a list of menu items for the user to choose from, or display some photos with descriptions. An SMS application can include an activity that displays a list of contacts to send to, an activity that writes a text message to a selected contact, and an activity that scrolls through previous text messages and changes settings. Although together they form a cohesive user interface, each activity remains independent of the others. Each is implemented as a subclass of the base class Activity class.
@@ -49,7 +48,7 @@ startActivity(intent);
 
 implicit start
 
-```
+```ruby=
 Intent intent = new Intent(Intent.ACTION_SEND);
 intent.putExtra(Intent.EXTRA_EMAIL, recipientArray);
 startActivity(intent);
@@ -63,7 +62,7 @@ singleTop : If an instance of the target activity already exists on the top of t
 singleTask : Creates an instance of the activity on top of a new task's stack. If the instance already exists, the system will use the instance directly and call the activity's onNewIntent() (it will not be recreated)</br>
 singleInstance : Similar to "singleTask", but no other activities will run in the target activity's task, and there will always be only one activity in that task.</br>
 The location of the setting is in the android:launchMode attribute of the activity element in the AndroidManifest.xml file:
-```
+```ruby=
 <activity android:name="ActB" android:launchMode="singleTask"></activity>
 ```
 Activity launch mode is used to control the creation of task and Activity instances. Default "standard" mode. Standard mode will generate a new Activity instance once it is started and will not create a new task.
@@ -74,7 +73,7 @@ Activity launch mode is used to control the creation of task and Activity instan
 When multiple activities have the same action, a selector will pop up for the user to choose when this action is called.
 
 **Permission**
-```
+```ruby=
 android:exported
 ```
 Whether an Activity component can be started by an external application depends on this property. When set to true, the Activity can be started by an external application. When set to false, it cannot. At this time, the Activity can only be started by its own app. (The same user id or root can also be started)
@@ -83,7 +82,7 @@ The action attribute exported with no intent-filter configured defaults to false
 
 The exported attribute is only used to limit whether the activity is exposed to other apps, and the external startup of the activity can also be restricted through the permission declaration in the configuration file.
 
-```
+```ruby=
 android:protectionLevel
 
 ```
@@ -99,7 +98,7 @@ signature: These permissions are only granted to programs signed with the same k
 
 signatureOrSystem: Similar to signature, except that the programs in the system also need to be eligible to access. This allows custom Android system applications to also gain permissions, and this level of protection helps integrate the system compilation process.
 
-```
+```ruby=
 <!-- *** POINT 1 *** Define a permission with protectionLevel="signature" -->
 <permission
 android:name="com.xenion.android.permission.protectedapp.MY_PERMISSION"
@@ -138,5 +137,20 @@ ref http://www.jssec.org/dl/android_securecoding_en.pdf
 10-Verify whether the target Activity is a malicious app, so as not to be deceived by intent, which can be verified by hash signature <br/>
 11-When Providing an Asset Secondhand, the Asset should be Protected with the Same Level of Protection <br/>
 12-Do not send sensitive information as much as possible, and consider the risk that the information of the intent in the public Activity may be stolen by malicious applications <br/>
+
+## Test method
+
+View activity:
+
+>>Decompile and view the activity component in the configuration file AndroidManifest.xml (focus on those with intent-filter configured and those without export="false")
+Open the installed app directly with RE to view the configuration file
+Drozer scan: run app.activity.info -a packagename
+Dynamic viewing: logcat sets the filter tag to ActivityManager
+
+Start the activity:
+
+>>adb shell：am start -a action -n package/componet
+drozer: run app.activity.start --action android.action.intent.VIEW ...
+Write your own app to call startActiviy() or startActivityForResult()
 
 
