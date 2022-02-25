@@ -1,7 +1,7 @@
 ---
 title: Android part 2 | Android
 layout: post
-categories: [Web-Vulnerabilities,SQLI]
+categories: [Android,Activity]
 tags: []
 toc: false
 published: true
