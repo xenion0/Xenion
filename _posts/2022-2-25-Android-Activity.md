@@ -29,7 +29,7 @@ Reference: http://developer.android.com/guide/components/activities.html
 ### Start method
 show start
 Register components in the configruation file AndroidManifest.xml
-```
+```ruby
 <activity android:name=".ExampleActivity" android:icon="@drawable/app_icon">
     <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -40,14 +40,14 @@ Register components in the configruation file AndroidManifest.xml
 
 Directly use the intent object to specify application and activity startup
 
-```
+```ruby
 Intent intent = new Intent(this, ExampleActivity.class);
 startActivity(intent);
 ```
 
 implicit start
 
-```ruby=
+```ruby
 Intent intent = new Intent(Intent.ACTION_SEND);
 intent.putExtra(Intent.EXTRA_EMAIL, recipientArray);
 startActivity(intent);
@@ -61,7 +61,7 @@ singleTop : If an instance of the target activity already exists on the top of t
 singleTask : Creates an instance of the activity on top of a new task's stack. If the instance already exists, the system will use the instance directly and call the activity's onNewIntent() (it will not be recreated)</br>
 singleInstance : Similar to "singleTask", but no other activities will run in the target activity's task, and there will always be only one activity in that task.</br>
 The location of the setting is in the android:launchMode attribute of the activity element in the AndroidManifest.xml file:
-```ruby=
+```ruby
 <activity android:name="ActB" android:launchMode="singleTask"></activity>
 ```
 Activity launch mode is used to control the creation of task and Activity instances. Default "standard" mode. Standard mode will generate a new Activity instance once it is started and will not create a new task.
@@ -72,7 +72,7 @@ Activity launch mode is used to control the creation of task and Activity instan
 When multiple activities have the same action, a selector will pop up for the user to choose when this action is called.
 
 ### Permission
-```ruby=
+```ruby
 android:exported
 ```
 Whether an Activity component can be started by an external application depends on this property. When set to true, the Activity can be started by an external application. When set to false, it cannot. At this time, the Activity can only be started by its own app. (The same user id or root can also be started)
@@ -81,7 +81,7 @@ The action attribute exported with no intent-filter configured defaults to false
 
 The exported attribute is only used to limit whether the activity is exposed to other apps, and the external startup of the activity can also be restricted through the permission declaration in the configuration file.
 
-```ruby=
+```ruby
 android:protectionLevel
 
 ```
@@ -97,7 +97,7 @@ signature: These permissions are only granted to programs signed with the same k
 
 signatureOrSystem: Similar to signature, except that the programs in the system also need to be eligible to access. This allows custom Android system applications to also gain permissions, and this level of protection helps integrate the system compilation process.
 
-```ruby=
+```ruby
 <!-- *** POINT 1 *** Define a permission with protectionLevel="signature" -->
 <permission
 android:name="com.xenion.android.permission.protectedapp.MY_PERMISSION"
