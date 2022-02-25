@@ -140,17 +140,18 @@ ref http://www.jssec.org/dl/android_securecoding_en.pdf
 
 ## Test method
 
-View activity:
+### View activity:
 
->>Decompile and view the activity component in the configuration file AndroidManifest.xml (focus on those with intent-filter configured and those without export="false")
-Open the installed app directly with RE to view the configuration file
-Drozer scan: run app.activity.info -a packagename
-Dynamic viewing: logcat sets the filter tag to ActivityManager
+* Decompile and view the activity component in the configuration file AndroidManifest.xml (focus on those with intent-filter configured and those without export="false")
+* Open the installed app directly with RE to view the configuration file
+* Drozer scan: run app.activity.info -a packagename
+* Dynamic viewing: logcat sets the filter tag to ActivityManager
 
-Start the activity:
+### Start the activity:
 
->>adb shell：am start -a action -n package/componet
-drozer: run app.activity.start --action android.action.intent.VIEW ...
-Write your own app to call startActiviy() or startActivityForResult()
+* adb shell：am start -a action -n package/componet
+* drozer: run app.activity.start --action android.action.intent.VIEW ...
+* Write your own app to call startActiviy() or startActivityForResult()
+
 
 
