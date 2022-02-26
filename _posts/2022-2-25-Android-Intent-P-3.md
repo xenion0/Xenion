@@ -23,10 +23,10 @@ Let’s look upon the informal way of defining Intents. You can think of Intents
  For example, if you want to send some message from Egypt to USA using the Post Office facility then you can do so by buying an Envelope and then pass the message in the Envelope and send the message to the desired location.
  
  
- ## Intent Types
+## Intent Types
  There are two type of Intent:
  
- ### 1- Explicit Intents
+### 1- Explicit Intents
  ![](https://i.imgur.com/vd7pS0m.png)
 if you want communication between the components of your application only then you can use the Explicit Intent.
 Explicit Intents are used to communicate with a particular component of the same application
@@ -36,7 +36,7 @@ provide the component name (class name ) This is usually for inter-application c
   for example , if you want to launch an Activity by clicking some button  on the present Activity then you go to target activity 
          code example for Explict Intent https://developer.android.com/guide/components/intents-filters#ExampleExplicit
 
- ### 2-Implicit Intent
+### 2-Implicit Intent
 used to invoke components of different application 
 
 They don’t  provide the specific component name to be invoked but rely on system to find the best available component to be invoked
