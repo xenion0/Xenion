@@ -124,6 +124,24 @@ Most popular obfuscators for Android code are ProGuard and DexGuard. The first o
 
 ![](https://i.imgur.com/xxi6i7r.png)
 
+### Code Signing 
+
+Apks have to be signed by the developer.But you can be your own developer. 
+But you still have to sign them. So after you have decompile the apk, you can recompile it as follows: 
+`apktool b <path-to-decompiled>  -o unsigned.apk `
+
+A signing program is available from the following git repository:
+https://github.com/glitterballs/release-tools.git 
+Go to its SignApk directory and run the following: 
+java -jar signapk.jar certificate.pem key.pk8 unsigned.apk signed.apk 
+You can create your own certificate and key to do the signing if you want. 
+
+Once you download app from the play store that is secure download and then you can reverse apk and tampring code and then build apk again and sign it to install app in device 
+
+It use to sign apk this app Easy way  https://m.apkpure.com/ar/apk-signer/com.haibison.apksigner 
+
+Or you can do that with manual way with keytool & jarsigner
+
 ### Dalvik & Smali ?
 Most android applications are written in java , kotlin is also supported and interoprable with java <br/>
 
