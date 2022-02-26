@@ -8,72 +8,76 @@ published: true
 ---
 # Android Pentent Series P1
 
-| Content                                                     |
-| ----------------------------------------------------------- |
-|  What is **APK** ?                                       |
-| **Dalvik** & **Smali**                   |
-|What is **Android components**?                                    |
-|  tools need to setup                                 |
-|  Resourse for **Android**                                      |
-|  **Labs**                                                 |
-| **Referance**                                            |
+| Content                              |
+| ------------------------------------ |
+| What is **APK** ?                    |
+| What is **Apk components**           |
+| What is **Android components**?      |
+| tools need to setup                  |
+| **Reverse APK**                      |
+| Resourse for **Android Programming** |
+| **Labs**                             |
+| **Referance**                        |
 
 
 ## What is **APK** ?
-Android applicatins are in the APK file formate.
+APK stands for Android Package (sometimes Android Package Kit or Android Application Package). It's the file format that Android uses to distribute and install apps. As a result, APKs contain all the elements that an app needs to install correctly on your device.
+
 APK is basically ZIP file. (You can rename the file extension to .zip to open and see its contents.)
-#### What is apk components ?
+
+![](https://i.imgur.com/dTqgxKC.png)
+
+![](https://i.imgur.com/o3WUwTG.png)
+
+but in this way files will be unreadable 
+![](https://i.imgur.com/UuusyXc.png)
+so that in later part will show the write way to see in readable form
+
+## What is apk components ?
 ![](https://i.imgur.com/Df9M19d.png)
 
-1.  **AndroidManifest.xml** <br/>
+###  **AndroidManifest.xml** <br/>
 This file contains the meta information about the app such as name of the app, package name, different activities and services, permissions required, supported version of Android etc.
 
-2. **Classes.dex** <br/>
+### **Classes.dex** <br/>
 This is the actual code of the app. “dex” is the short form of Dalvik Executable. The source code will be in the extension “.java or .kt”. When it is compiled it will become “.class”. But in android all these class files are further optimized and packed into dex file for running easily in the android run time.
-3. **lib/** <br/>
+### **lib/** <br/>
 Native libraries for the application, Under the lib/ directory, there are the cpu-specific directories. Ex: armeabi, mips
 is used for storing libraries and precompiled code and savelinux shared object (.so) files.The .so files are libraries created by the developer or from  third-party If an attacker found a way to modify or replace these file and get them to execute this could result in arbitrary code execution
-4. **assets/** <br/>
+### **assets/** <br/>
 Any other files that may be needed by the app.
 Additional native libraries or DEX files may be included here. This can happen especially when malware authors want to try and “hide” additional code, native or Dalvik, by not including it in the default locations.
-5. **META-INF/**<br/>
+### **META-INF/**<br/>
 contains files related to the integrity and authenticity of the app
-**This folder contains 3 files** <br/>
-1.MANIFEST.MF<br/>
-2.CERT.SF <br/>
-3.CERT.RSA <br/>
-6. **res/** <br/>
+**This folder contains 3 files**
+
+MANIFEST.MF
+: It contains various information used by the java run-time environment when loading the jar file, such as which is the main class to be run from the jar file, version of package, build number, creator of the package, security policies/permissions of java applets and java webstart packages, the list of file names in the jar along with their SHA1 digests, etc.
+
+CERT.SF
+: This contains the list of all files along with their SHA-1 digest.
+
+CERT.RSA
+: This contains the signed contents of the CERT.SF file along with the certificate chain of the public key used for signing the contents
+
+### **res/** 
 
 ![](https://i.imgur.com/AkO2dQo.png)
-<br/>
+
 res is where the resources of app which is not compiled to resources.arsc is stored. As you can see there are many sub folders inside it. Each folder contains different type of resources. 
 For example values folder have file   strings.xml  which have all const for app may be have api key for example  or aws Cognito <br/>
-## Dalvik & Smali ?
-Most android applications are written in java , kotlin is also supported and interoprable with java <br/>
-
-Instead of the Java code being run in Java Virtual Machine (JVM) like desktop applications, in Android, the Java is compiled to the Dalvik Executable (DEX) bytecode format. <br/>
-For earlier versions of Android, the bytecode was translated by the Dalvik virtual machine. For more recent versions of Android, the Android Runtime (ART) is used. <br/>
-If developers, write in Java and the code is compiled to DEX bytecode <br/>
-![](https://i.imgur.com/JPJsb8q.png)
-<br/> to reverse engineer, do the opposite direction <br/>
-![](https://i.imgur.com/dHK1fYY.png)
-
-Smali is the human readable version of Dalvik bytecode. Technically, Smali and baksmali are the name of the tools (assembler and disassembler, respectively), but in Android, we often use the term “Smali” to refer to instructions. <br/>
- SMALI is like the assembly language: between the higher level source code and the bytecode. <br/>
-
-
 ##  What is **Android components** ?
 
-1. **Activities :** <br/>
+### **Activities :** <br/>
 An activity is the entry point for interacting with the user.
 in-short Activity performs actions on the screen. <br/>
 **Fragments :** Represents a portion of user interface in an Activity.
-2. **Services :** <br/>
+### **Services :** <br/>
 A service is a component that runs in the background to perform long-running operations. For example, a service might play music in the background while the user is in a different application
-3. **Broadcast receivers :** <br/>
+### **Broadcast receivers :** <br/>
 They handle communication between Android OS and applications.
 
-4. **Content provicers :** <br/>
+### **Content provicers :** <br/>
 content provider component supplies data from one application to others on request.
 The data may be stored in the file system, the database or somewhere else entirely.
 
@@ -89,6 +93,53 @@ The data may be stored in the file system, the database or somewhere else entire
 6. **jadx-gui** <br/>
 7. **drozer** [learn drozer from here](https://book.hacktricks.xyz/mobile-apps-pentesting/android-app-pentesting/drozer-tutorial)
 8. **frida**  [learn frida](https://www.youtube.com/watch?v=iMNs8YAy6pk&ab_channel=sambal0x)
+
+You can install tools in windows and add it in path of env that will make use of tools more easy from cmd.
+![](https://i.imgur.com/rXe90W8.png)
+
+
+## Reverse APK 
+This is just a quick intro about Reverse APK 
+
+Reverse Apk
+: application reverse engineering is used to find bugs like Tampring code or source cod can be reviewed bu using Reverse engineering
+
+Decompiling the APK 
+: APKs are zip file archives that store the android app. They are no longer the java source code files, so decompiling them only gives you the “compiled” byte code.
+
+The tool apktool supports decompiling:
+`  apktool file.apk `
+Use -r to avoid decompiling the resources (e.g., images, etc.). This is useful if you want to later re-compile it because you made changes, etc.
+
+or can use tool like jadx-gui will be more easy or mobsf
+
+[Reverse Engineering Android Applications](https://www.youtube.com/watch?v=m9UZnWLLurY)
+
+### Source code obfuscation 
+Android Runtime (ART) executes .dex files, which are part of the APK package. Dalvik bytecod (.dex) can be translated to equivalent Java bytecode. Conversion is not perfect and cannot be reversed, but Java code can be easily read and analyzed. Understanding the code, specifically implemented security mechanisms gives the attacker great advantage and  significantly increases the chance of exploiting the application. 
+
+To mitigate that risk, developers can obfuscate the source code. Obfuscation is a process of making a code difficult to understand by humans, but without changing its semantics and functionality. The most typical techniques used by obfuscators are changing methods/parameters names, modifying the flow of the code and encrypting string and assets. 
+
+Most popular obfuscators for Android code are ProGuard and DexGuard. The first one is available for free, but offers less protection against reverse engineering. 
+
+![](https://i.imgur.com/xxi6i7r.png)
+
+### Dalvik & Smali ?
+Most android applications are written in java , kotlin is also supported and interoprable with java <br/>
+
+Instead of the Java code being run in Java Virtual Machine (JVM) like desktop applications, in Android, the Java is compiled to the Dalvik Executable (DEX) bytecode format. <br/>
+For earlier versions of Android, the bytecode was translated by the Dalvik virtual machine. For more recent versions of Android, the Android Runtime (ART) is used. <br/>
+If developers, write in Java and the code is compiled to DEX bytecode <br/>
+![](https://i.imgur.com/JPJsb8q.png)
+<br/> to reverse engineer, do the opposite direction <br/>
+![](https://i.imgur.com/dHK1fYY.png)
+
+Smali is the human readable version of Dalvik bytecode. Technically, Smali and baksmali are the name of the tools (assembler and disassembler, respectively), but in Android, we often use the term “Smali” to refer to instructions. <br/>
+ SMALI is like the assembly language: between the higher level source code and the bytecode. <br/>
+
+
+
+
 
 
 ## **Resourse for Android :** 
