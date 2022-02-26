@@ -14,6 +14,7 @@ published: true
 |   What is **Activity** ?    |
 |    **Knowledge points**     |
 | **Activity classification** |
+|      **Vuln Example**       |
 |       **Test method**       |
 |        **Referance**        |
 
@@ -64,12 +65,19 @@ startActivity(intent);
 
 Activity has four loading modes:
 
-standard : Default behavior. Every time an activity is started, the system creates a new instance in the target task.</br>
-singleTop : If an instance of the target activity already exists on the top of the stack of the target task, the system will use the instance directly and call the activity's onNewIntent() (it will not be recreated)</br>
-singleTask : Creates an instance of the activity on top of a new task's stack. If the instance already exists, the system will use the instance directly and call the activity's onNewIntent() (it will not be recreated)</br>
-singleInstance : Similar to "singleTask", but no other activities will run in the target activity's task, and there will always be only one activity in that task.</br>
-The location of the setting is in the android:launchMode attribute of the activity element in the AndroidManifest.xml file:
-```ruby
+standard 
+: Default behavior. Every time an activity is started, the system creates a new instance in the target task.
+
+singleTop 
+: If an instance of the target activity already exists on the top of the stack of the target task, the system will use the instance directly and call the activity's onNewIntent() (it will not be recreated)
+
+singleTask 
+: Creates an instance of the activity on top of a new task's stack. If the instance already exists, the system will use the instance directly and call the activity's onNewIntent() (it will not be recreated)</br>
+
+singleInstance 
+: Similar to "singleTask", but no other activities will run in the target activity's task, and there will always be only one activity in that task.</br>
+The location of the setting is in the android:launchMode attribute of the activity element in the `AndroidManifest.xml` file:
+```xml
 <activity android:name="ActB" android:launchMode="singleTask"></activity>
 ```
 Activity launch mode is used to control the creation of task and Activity instances. Default "standard" mode. Standard mode will generate a new Activity instance once it is started and will not create a new task.
@@ -80,9 +88,8 @@ Activity launch mode is used to control the creation of task and Activity instan
 When multiple activities have the same action, a selector will pop up for the user to choose when this action is called.
 
 ### Permission
-```ruby
-android:exported
-```
+`android:exported`
+
 Whether an Activity component can be started by an external application depends on this property. When set to true, the Activity can be started by an external application. When set to false, it cannot. At this time, the Activity can only be started by its own app. (The same user id or root can also be started)
 
 The action attribute exported with no intent-filter configured defaults to false (without a filter, the activity can only be started through a clear class name, so it is equivalent to only the program itself can be started), and the action attribute exported with an intent-filter configured defaults to true.
@@ -91,7 +98,6 @@ The exported attribute is only used to limit whether the activity is exposed to 
 
 ```ruby
 android:protectionLevel
-
 ```
 http://developer.android.com/intl/zh-cn/guide/topics/manifest/permission-element.html
 ![](https://i.imgur.com/IFlK4iJ.png)
@@ -143,7 +149,55 @@ Activity type and usage determine its risks and defense methods, so activities a
 11-When Providing an Asset Secondhand, the Asset should be Protected with the Same Level of Protection <br/>
 12-Do not send sensitive information as much as possible, and consider the risk that the information of the intent in the public Activity may be stolen by malicious applications <br/>
 
-## Test method
+## **Vuln Example**
+
+[first you need to donwload InjuredAndroid apk from here](https://m.apkpure.com/ar/injuredandroid/b3nac.injuredandroid/download?from=details)
+
+then istall apk with adb tool with 
+![](https://i.imgur.com/PVYtWzK.png)
+
+### test with Drozer
+
+first we need to know package name with drozer 
+```ruby
+dz> run app.package.list -f  injured
+b3nac.injuredandroid (InjuredAndroid)
+```
+
+Identifying the attack surface
+![](https://i.imgur.com/jCHQD1q.png)
+
+retrive info about each activity in app and listed expoted and hiden activty
+![](https://i.imgur.com/hCAT552.png)
+
+Start activity with Drozer 
+![](https://i.imgur.com/6rkgTxB.png)
+
+```
+run app.activity.start --component <package name> <component name>
+
+run app.activity.start --component b3nac.injuredandroid   b3nac.injuredandroid.b25lActivity
+
+```
+### with ADB tool form 
+in this way you need to open apk with jadx-gui and search for  `android:exported="true"`
+
+![](https://i.imgur.com/lBVj0Mp.png)
+
+`adb shell am start -n b3nac.injuredandroid/.b25lActivity`
+
+### with POC java code 
+![](https://i.imgur.com/wpi3fbu.png)
+creat intent that specify first packge name and then component name
+and then start the Intent will open the target activity
+
+![](https://i.imgur.com/N05HSk6.png)![](https://i.imgur.com/2GWvSTK.png)|
+
+![](https://i.imgur.com/6inTjBY.png)
+
+
+
+## **Test method**
 
 ### View activity:
 
