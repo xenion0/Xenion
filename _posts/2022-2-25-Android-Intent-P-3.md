@@ -110,7 +110,7 @@ When intent filters are mentioned for a component in the Manifest file that comp
     
 Example: if we have a component file which will use implicit intent (action, data, category) like action call a tel and there are more than one component with the same contents of call a tel, and uses the same intent. You may see the option Open with: Call Phone - Truecaller - etc.. and that's because of the existing of more than one component matches and handles same intent.
 
-When intent filters are mentioned for a component in the Manifest file that component automatically becomes exported unless the developer overrides that by mentioning exported=FALSE in the component attribute.
+**When intent filters are mentioned for a component in the Manifest file that component automatically becomes exported unless the developer overrides that by mentioning exported=FALSE in the component attribute.**
     
     
     
