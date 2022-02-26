@@ -306,7 +306,8 @@ val secondIntent = intent.getStringExtra(“key”)
 
 </table>
     
-## Ref    
+## Ref  
+https://hackerone.com/reports/200427  
 https://developer.android.com/guide/components/intents-filters
     
 https://medium.com/androiddevelopers/lets-be-explicit-about-our-intent-filters-c5dbe2dbdce0    
