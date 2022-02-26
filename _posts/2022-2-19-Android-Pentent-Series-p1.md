@@ -1,3 +1,11 @@
+---
+title: Intent P3
+layout: post
+categories: [Android]
+tags: []
+toc: true
+published: true
+---
 # Android Pentent Series P1
 
 | Content                                                     |
