@@ -1,3 +1,12 @@
+---
+title: Android Intent P3
+layout: post
+categories: [Android]
+tags: [Intent]
+toc: true
+published: true
+---
+
 # Android Intent P-3
 
 
