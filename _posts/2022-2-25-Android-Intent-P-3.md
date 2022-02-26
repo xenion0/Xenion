@@ -1,15 +1,17 @@
 # Android Intent P-3
 
 
-| Content                |
-|:---------------------- |
-| **What is Intent?**    |
-| **Type of Intent**     |
-| **Use Cases**          |
-| **Intent Component**   |
-| **Intent Filter**      |
-| **Example of Intent**  |
-| **Attacks in Intents** |
+|                  Content                  |
+|:-----------------------------------------:|
+|            **What is Intent?**            |
+|            **Type of Intent**             |
+|               **Use Cases**               |
+|           **Intent Component**            |
+|             **Intent Filter**             |
+|           **Example of Intent**           |
+|          **Attacks in Intents**           |
+| **Diff between Explicit & Implicit Intent** |
+
                       
 
 ## What is Intent ?
@@ -23,10 +25,10 @@ Let’s look upon the informal way of defining Intents. You can think of Intents
  For example, if you want to send some message from Egypt to USA using the Post Office facility then you can do so by buying an Envelope and then pass the message in the Envelope and send the message to the desired location.
  
  
-## Intent Types
+ ## Intent Types
  There are two type of Intent:
  
-### 1- Explicit Intents
+ ### 1-Explicit Intents
  ![](https://i.imgur.com/vd7pS0m.png)
 if you want communication between the components of your application only then you can use the Explicit Intent.
 Explicit Intents are used to communicate with a particular component of the same application
@@ -36,7 +38,7 @@ provide the component name (class name ) This is usually for inter-application c
   for example , if you want to launch an Activity by clicking some button  on the present Activity then you go to target activity 
          code example for Explict Intent https://developer.android.com/guide/components/intents-filters#ExampleExplicit
 
-### 2-Implicit Intent
+ ### 2-Implicit Intent
 used to invoke components of different application 
 
 They don’t  provide the specific component name to be invoked but rely on system to find the best available component to be invoked
@@ -71,8 +73,8 @@ without a component name the intent is implicit and Android system will decides 
 A string that specifies the generic action to perform (such as view or pick)
 example of action   ACTION_VIEW
 Use this action in an intent with startActivity()  when you have some information that an activity can show to the user And developer can make custom action  to perform  by define app package name
-```c++
-static final String ACTION_TIMETRAVEL = "com.example.action.TIMETRAVEL";
+```ruby
+        static final String ACTION_TIMETRAVEL = "com.example.action.TIMETRAVEL";
 ```
 3- Extras :  <br/>
 you can add extra data to intent in the for of key-value pairs and this extras information can be passed from one activity to the other <br/>
@@ -104,9 +106,155 @@ In the example scenario below, MainActivity is sending sensitive data to MainAct
 
 Example: if we have a component file which will use implicit intent (action, data, category) like action call a tel and there are more than one component with the same contents of call a tel, and uses the same intent. You may see the option Open with: Call Phone - Truecaller - etc.. and that's because of the existing of more than one component matches and handles same intent.
 
-When intent filters are mentioned for a component in the Manifest file that component automatically becomes exported unless the developer overrides that by mentioning `exported=FALSE` in the component attribute.
+When intent filters are mentioned for a component in the Manifest file that component automatically becomes exported unless the developer overrides that by mentioning exported=FALSE in the component attribute.
     
 Example: if we have a component file which will use implicit intent (action, data, category) like action call a tel and there are more than one component with the same contents of call a tel, and uses the same intent. You may see the option Open with: Call Phone - Truecaller - etc.. and that's because of the existing of more than one component matches and handles same intent.
 
 When intent filters are mentioned for a component in the Manifest file that component automatically becomes exported unless the developer overrides that by mentioning exported=FALSE in the component attribute.
+    
+    
+    
+## Examples of  Intent
 
+### Why we need to know about how to create Intent ?
+    
+when want to exploit the bug and create POC will be better if create app make that 
+
+### Example of Explicit Intent:
+| ![](https://i.imgur.com/B6U1fVV.png)|![](https://i.imgur.com/vFoKyw5.png)|
+| :---: | :---: | 
+    
+### Code Example    
+![](https://i.imgur.com/eIapXrB.png)
+
+    1- Intent object that we will to go from first Activity to Target
+    2 setClassName() that to specify the packageName and the class want to go fore 
+    3- startActivity() used to start Activity that define in the Intent 
+    
+    
+That small example about how to create Intent the same way can do to start another android component (Broadcast Receivers - Service - Activity)
+
+### Example of Implicit Intent:
+doesn’t specify the component. In such a case, intent provides information on available components provided by the system that is to be invoked. For example, you may write the following code to view the webpage.
+    
+ | ![](https://i.imgur.com/OE2JzKw.png)|![](https://i.imgur.com/9AYkk1C.png)|
+| :---: | :---: | 
+    
+for example we chose chrome to accept ower action to do 
+chrome open and take our url as input to open  
+![](https://i.imgur.com/ZZaNjKO.png)
+    
+
+### Code Example  
+![](https://i.imgur.com/WJTuE23.png)
+
+1- Intent object and in constructor  we give it action we need to do <br/>
+2- here give intent the  uri  as data to oben in webview <br/>
+3- start the Intent <br/>
+
+## Attacks in Intents
+    
+  
+    
+## Diff between Explicit & Implicit Intent  
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+
+Explicit Intent
+
+</th>
+
+<th>
+
+Implicit Intent
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+As already mentioned above explicit intents are those in which the user has a clear vision and knows exactly which activity can handle the requests.
+
+**Example**: When you have a Listview screen on tap of each item you will go to detail activity  
+
+**Intent = Intent(applicationContext,DetailActivity::class.java)**
+
+**startActivity(intent)**
+
+</td>
+
+<td>
+
+Implicit intents do not name a specific component like explicit intent, instead declare general action to perform, which allows a component from another app to handle.
+
+**Example:** When you tap the share button in any app you can see the Gmail, Bluetooth, and other sharing app options. Here user sends a request is the implicit intent request which can be handled by these Gmail, Bluetooth-like app.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Explicit intent can do the specific application action which is set by the code like changing activity, downloading the file in the background, etc.</td>
+
+<td>It specifies the only action to be performed and does not directly specify Android Components.</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+In explicit intent, you can pass data to other activities by using the putExtra method and retrieve by using getIntent().
+
+**Example:**
+
+val intent = Intent(this, SecondActivity:: class.java).apply{
+
+putExtra(“key”,”New Value”)
+
+}
+
+startActivity(intent)
+
+**Second Screen:**
+
+val secondIntent = intent.getStringExtra(“key”)
+
+</td>
+
+<td>Here we just mention the action in the intent and OS decides which applications are suitable to handle the task, action across two different applications.</td>
+
+</tr>
+
+<tr>
+
+<td>Explicit intents are used for communication inside the application. Like changing activities inside the application.</td>
+
+<td>They are used for communication across two different applications.</td>
+
+</tr>
+
+<tr>
+
+<td>In explicit intent, the action target is delivered even the filter is not consulted.</td>
+
+<td>When you make an implicit call with the intent. OS look at the action and then it matches with all the filters intent-filters of all the registered activities of all application using PackageManager and then populates the result as a list, this process is called as intent Resolution. </td>
+
+</tr>
+
+</tbody>
+
+</table>
