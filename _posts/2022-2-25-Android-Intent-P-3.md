@@ -71,8 +71,8 @@ without a component name the intent is implicit and Android system will decides 
 A string that specifies the generic action to perform (such as view or pick)
 example of action   ACTION_VIEW
 Use this action in an intent with startActivity()  when you have some information that an activity can show to the user And developer can make custom action  to perform  by define app package name
-```ruby
-        static final String ACTION_TIMETRAVEL = "com.example.action.TIMETRAVEL";
+```c++
+static final String ACTION_TIMETRAVEL = "com.example.action.TIMETRAVEL";
 ```
 3- Extras :  <br/>
 you can add extra data to intent in the for of key-value pairs and this extras information can be passed from one activity to the other <br/>
@@ -104,7 +104,7 @@ In the example scenario below, MainActivity is sending sensitive data to MainAct
 
 Example: if we have a component file which will use implicit intent (action, data, category) like action call a tel and there are more than one component with the same contents of call a tel, and uses the same intent. You may see the option Open with: Call Phone - Truecaller - etc.. and that's because of the existing of more than one component matches and handles same intent.
 
-When intent filters are mentioned for a component in the Manifest file that component automatically becomes exported unless the developer overrides that by mentioning exported=FALSE in the component attribute.
+When intent filters are mentioned for a component in the Manifest file that component automatically becomes exported unless the developer overrides that by mentioning `exported=FALSE` in the component attribute.
     
 Example: if we have a component file which will use implicit intent (action, data, category) like action call a tel and there are more than one component with the same contents of call a tel, and uses the same intent. You may see the option Open with: Call Phone - Truecaller - etc.. and that's because of the existing of more than one component matches and handles same intent.
 
