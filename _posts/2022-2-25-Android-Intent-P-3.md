@@ -137,7 +137,7 @@ That small example about how to create Intent the same way can do to start anoth
 ### Example of Implicit Intent:
 doesn’t specify the component. In such a case, intent provides information on available components provided by the system that is to be invoked. For example, you may write the following code to view the webpage.
     
- ![](https://i.imgur.com/OE2JzKw.png)![](https://i.imgur.com/9AYkk1C.png)|
+![](https://i.imgur.com/OE2JzKw.png)![](https://i.imgur.com/9AYkk1C.png)|
 
     
 for example we chose chrome to accept ower action to do 
