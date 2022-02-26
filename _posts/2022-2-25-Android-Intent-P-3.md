@@ -1,12 +1,3 @@
----
-title: Android Intent P3
-layout: post
-categories: [Android]
-tags: [Intent]
-toc: true
-published: true
----
-
 # Android Intent P-3
 
 
@@ -130,8 +121,7 @@ When intent filters are mentioned for a component in the Manifest file that comp
 when want to exploit the bug and create POC will be better if create app make that 
 
 ### Example of Explicit Intent:
-  
-![](https://i.imgur.com/B6U1fVV.png)![](https://i.imgur.com/vFoKyw5.png)|
+![](https://i.imgur.com/B6U1fVV.png)![](https://i.imgur.com/vFoKyw5.png)
 
     
 ### Code Example    
@@ -164,8 +154,53 @@ chrome open and take our url as input to open
 
 ## Attacks in Intents
     
-  
+
+**The default behavior depends on whether the component is likely to be used externally. 
+In the case of Activities, Services, and Broadcast Receivers, the default depends on how the component is configured with regard to Intents. 
+As we have seen, a component can specify an Intent filter that allows it to receive Intents from other apps to carry out tasks.
+As such, if a component specifies an Intent filter, it is assumed that you want the component to be accessed by other apps and it is, by default, exported and thus public.
+If, however, no Intent filter is specified for a component, the only way to send an Intent to it is to fully specify the component’s class name. 
+Therefore, it is assumed that you do not want to make this component publicly accessible, so the default exported is false and the component is private.**
+
+```    
+this paragraph important to understand i take it from 
+book Application Security for the Android Platform by Jeff Six
+```    
+   
+[link for lab Intent Redirection (Access to Protected Components)](https://github.com/optiv/InsecureShop/releases/download/v1.0/InsecureShop.apk)   
+first you need to reverse apk with tool like jadx-gui and look in code will find this code vul take your extra and start with it a new activity 
+
+```ruby
+          <activity android:name="com.insecureshop.WebView2Activity">
+            <intent-filter>
+                <action android:name="com.insecureshop.action.WEBVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+``` 
     
+    
+this code in `WebView2Activity.java`
+    
+![](https://i.imgur.com/nHaENjM.png)
+
+The extra intent being passed is not sanitized or filtered in any way, which means we could use this activity to pass an intent which would then be used by the startActivity. That seems a perfect candidate to access the PrivateActivity.
+
+### **POC**    
+ ![](https://i.imgur.com/yTXIWNf.png)
+
+make intent as extra that will start new activity this technique look like nested intent intent object will start webView and extra object will start privateActivity 
+
+![](https://i.imgur.com/r6ooCLK.png)![](https://i.imgur.com/1yzswkL.png)|
+![](https://i.imgur.com/b5SsgZs.png)
+    
+    
+**When open adb logcat will find** 
+![](https://i.imgur.com/F4FrwfB.png)
+
+that mean exploit done 
+ 
 ## Diff between Explicit & Implicit Intent  
 <table>
 
@@ -268,3 +303,9 @@ val secondIntent = intent.getStringExtra(“key”)
 </tbody>
 
 </table>
+    
+## Ref    
+https://developer.android.com/guide/components/intents-filters
+    
+https://medium.com/androiddevelopers/lets-be-explicit-about-our-intent-filters-c5dbe2dbdce0    
+    
