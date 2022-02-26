@@ -77,7 +77,7 @@ singleTask
 singleInstance 
 : Similar to "singleTask", but no other activities will run in the target activity's task, and there will always be only one activity in that task.</br>
 The location of the setting is in the android:launchMode attribute of the activity element in the `AndroidManifest.xml` file:
-```xml
+```
 <activity android:name="ActB" android:launchMode="singleTask"></activity>
 ```
 Activity launch mode is used to control the creation of task and Activity instances. Default "standard" mode. Standard mode will generate a new Activity instance once it is started and will not create a new task.
