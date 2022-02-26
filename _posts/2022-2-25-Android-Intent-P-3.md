@@ -26,7 +26,7 @@ Let’s look upon the informal way of defining Intents. You can think of Intents
  ## Intent Types
  There are two type of Intent:
  
- ### 1-Explicit Intents
+ ### 1- Explicit Intents
  ![](https://i.imgur.com/vd7pS0m.png)
 if you want communication between the components of your application only then you can use the Explicit Intent.
 Explicit Intents are used to communicate with a particular component of the same application
