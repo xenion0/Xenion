@@ -308,4 +308,5 @@ val secondIntent = intent.getStringExtra(“key”)
 https://developer.android.com/guide/components/intents-filters
     
 https://medium.com/androiddevelopers/lets-be-explicit-about-our-intent-filters-c5dbe2dbdce0    
-    
+  
+https://docs.insecureshopapp.com/insecureshop-challenges/access-to-protected-components    
