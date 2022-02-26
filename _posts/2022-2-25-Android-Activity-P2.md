@@ -76,7 +76,8 @@ singleTask
 
 singleInstance 
 : Similar to "singleTask", but no other activities will run in the target activity's task, and there will always be only one activity in that task.</br>
-The location of the setting is in the android:launchMode attribute of the activity element in the `AndroidManifest.xml` file:
+The location of the setting is in the android:launchMode attribute of the activity element in the `AndroidManifest.xml`.  file:
+
 ```
 <activity android:name="ActB" android:launchMode="singleTask"></activity>
 ```
@@ -99,6 +100,7 @@ The exported attribute is only used to limit whether the activity is exposed to 
 ```ruby
 android:protectionLevel
 ```
+
 http://developer.android.com/intl/zh-cn/guide/topics/manifest/permission-element.html
 ![](https://i.imgur.com/IFlK4iJ.png)
 ![](https://i.imgur.com/IbIBmXO.png)
@@ -112,6 +114,7 @@ signature: These permissions are only granted to programs signed with the same k
 signatureOrSystem: Similar to signature, except that the programs in the system also need to be eligible to access. This allows custom Android system applications to also gain permissions, and this level of protection helps integrate the system compilation process.
 
 ```ruby
+
 <!-- *** POINT 1 *** Define a permission with protectionLevel="signature" -->
 <permission
 android:name="com.xenion.android.permission.protectedapp.MY_PERMISSION"
@@ -127,9 +130,11 @@ android:label="@string/app_name"
 android:permission="com.xenion.android.permission.protectedapp.MY_PERMISSION" >
 <!-- *** POINT 3 *** If the component is an activity, you must define no intent-filter -->
 </activity>
+
 ```
 
 ## Activity classification
+
 Activity type and usage determine its risks and defense methods, so activities are classified as follows: Private, Public, Parter, In-house
 
 ![](https://i.imgur.com/oN9l2PY.png)
