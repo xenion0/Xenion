@@ -121,6 +121,7 @@ When intent filters are mentioned for a component in the Manifest file that comp
 when want to exploit the bug and create POC will be better if create app make that 
 
 ### Example of Explicit Intent:
+  
 ![](https://i.imgur.com/B6U1fVV.png)![](https://i.imgur.com/vFoKyw5.png)|
 
     
@@ -190,9 +191,10 @@ The extra intent being passed is not sanitized or filtered in any way, which mea
 ### **POC**    
  ![](https://i.imgur.com/yTXIWNf.png)
 
-make intent as extra that will start new activity this technique look like nested intent intent object will start webView and extra object will start privateActivity 
-![](https://i.imgur.com/r6ooCLK.png)![](https://i.imgur.com/1yzswkL.png)|
+make intent as extra that will start new activity this technique look like nested intent intent object will start webView and extra object will start privateActivity <br/>
   
+![](https://i.imgur.com/r6ooCLK.png)![](https://i.imgur.com/1yzswkL.png)|
+<br/>
 ![](https://i.imgur.com/b5SsgZs.png)
     
     
