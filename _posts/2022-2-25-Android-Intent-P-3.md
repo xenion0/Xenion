@@ -121,8 +121,8 @@ When intent filters are mentioned for a component in the Manifest file that comp
 when want to exploit the bug and create POC will be better if create app make that 
 
 ### Example of Explicit Intent:
-| ![](https://i.imgur.com/B6U1fVV.png)|![](https://i.imgur.com/vFoKyw5.png)|
-| :---: | :---: | 
+![](https://i.imgur.com/B6U1fVV.png)|![](https://i.imgur.com/vFoKyw5.png)
+
     
 ### Code Example    
 ![](https://i.imgur.com/eIapXrB.png)
@@ -137,8 +137,8 @@ That small example about how to create Intent the same way can do to start anoth
 ### Example of Implicit Intent:
 doesn’t specify the component. In such a case, intent provides information on available components provided by the system that is to be invoked. For example, you may write the following code to view the webpage.
     
- | ![](https://i.imgur.com/OE2JzKw.png)|![](https://i.imgur.com/9AYkk1C.png)|
-| :---: | :---: | 
+ ![](https://i.imgur.com/OE2JzKw.png)![](https://i.imgur.com/9AYkk1C.png)|
+
     
 for example we chose chrome to accept ower action to do 
 chrome open and take our url as input to open  
