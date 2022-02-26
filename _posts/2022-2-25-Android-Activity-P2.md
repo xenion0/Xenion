@@ -1,5 +1,5 @@
 ---
-title: Intent P3
+title: Android Activity P2
 layout: post
 categories: [Android]
 tags: [Activity]
