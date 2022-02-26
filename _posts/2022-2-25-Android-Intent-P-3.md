@@ -130,7 +130,8 @@ When intent filters are mentioned for a component in the Manifest file that comp
 when want to exploit the bug and create POC will be better if create app make that 
 
 ### Example of Explicit Intent:
-![](https://i.imgur.com/B6U1fVV.png)![](https://i.imgur.com/vFoKyw5.png)
+  
+![](https://i.imgur.com/B6U1fVV.png)![](https://i.imgur.com/vFoKyw5.png)|
 
     
 ### Code Example    
