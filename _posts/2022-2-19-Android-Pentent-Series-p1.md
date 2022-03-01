@@ -37,7 +37,44 @@ so that in later part will show the write way to see in readable form
 ![](https://i.imgur.com/Df9M19d.png)
 
 ###  **AndroidManifest.xml** <br/>
-This file contains the meta information about the app such as name of the app, package name, different activities and services, permissions required, supported version of Android etc.
+The manifest file describes the app structure, its components (activities, services, content providers, and intent receivers), and requested permissions. It also contains general app metadata, such as the app's icon, version number, and theme. 
+
+Here is an example of a manifest file, including the package name (the convention is a reversed URL, but any string is acceptable). It also lists the app version, relevant SDKs, required permissions, exposed content providers, broadcast receivers used with intent filters and a description of the app and its activities:
+
+```
+<manifest
+    package="com.owasp.myapplication"
+    android:versionCode="0.1" >
+
+    <uses-sdk android:minSdkVersion="12"
+        android:targetSdkVersion="22"
+        android:maxSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <provider
+        android:name="com.owasp.myapplication.MyProvider"
+        android:exported="false" />
+
+    <receiver android:name=".MyReceiver" >
+        <intent-filter>
+            <action android:name="com.owasp.myapplication.myaction" />
+        </intent-filter>
+    </receiver>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Material.Light" >
+        <activity
+            android:name="com.owasp.myapplication.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+```
 
 ### **Classes.dex** <br/>
 This is the actual code of the app. “dex” is the short form of Dalvik Executable. The source code will be in the extension “.java or .kt”. When it is compiled it will become “.class”. But in android all these class files are further optimized and packed into dex file for running easily in the android run time.
@@ -71,15 +108,36 @@ For example values folder have file   strings.xml  which have all const for app 
 ### **Activities :** <br/>
 An activity is the entry point for interacting with the user.
 in-short Activity performs actions on the screen. <br/>
-**Fragments :** Represents a portion of user interface in an Activity.
+Each activity needs to be declared in the Android Manifest with the following syntax:
+```
+<activity android:name="ActivityName">
+</activity>
+```
+
+**Fragments :** represents a behavior or a portion of the user interface within the activity.
+Fragments don't need to be declared in manifest files because they depend on activities.
+
+Example in Java:
+```
+public class MyFragment extends Fragment {
+    ...
+}
+```
+
 ### **Services :** <br/>
 A service is a component that runs in the background to perform long-running operations. For example, a service might play music in the background while the user is in a different application
+```
+<service android:name=".ExampleService" />
+```
 ### **Broadcast receivers :** <br/>
 They handle communication between Android OS and applications.
+
 
 ### **Content provicers :** <br/>
 content provider component supplies data from one application to others on request.
 The data may be stored in the file system, the database or somewhere else entirely.
+
+every component will be in anothe part in future so here just intro .
 
 ## Tools need to setup 
 
