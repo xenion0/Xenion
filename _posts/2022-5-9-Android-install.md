@@ -32,11 +32,12 @@ published: true
 ### 1- Install burp suite
 Now you would need to set up a Burp CA’s certificate into the emulated 
 Navigate to <br/> Burp -> Proxy -> Options -> Export CA certificate -> Certificate in DER format.
-Certificate DER will be input to Script
-3- Install Genymotion
-![](https://i.imgur.com/dh90oev.png)
-![](https://i.imgur.com/nnkFwbL.png)
-![](https://i.imgur.com/zwjQswc.png)
+Certificate DER will be input to Script <br/>
+<br/>
+3- Install Genymotion <br/>
+![](https://i.imgur.com/dh90oev.png) <br/>
+![](https://i.imgur.com/nnkFwbL.png) <br/>
+![](https://i.imgur.com/zwjQswc.png) <br/>
 
 ## Usage Script
 ![](https://i.imgur.com/PoLRDwo.png)
@@ -65,8 +66,8 @@ drozer
 ### 3- Frida<br/>
  This is a dynamic code instrumentation toolkit which lets you dynamically inject snippets of code into running processes of the app in order to change its behavior.
  
-when Script finish will find frida server in /data/local/tmp
-![](https://i.imgur.com/2aNdszM.png)
+when Script finish will find frida server in /data/local/tmp <br/>
+![](https://i.imgur.com/2aNdszM.png) <br/>
 
 run frida
 ```
