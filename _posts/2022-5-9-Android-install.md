@@ -27,6 +27,13 @@ published: true
 3. go
 4. java
 
+### Installation:
+```
+git clone https://github.com/xenion0/Android_install.git  
+cd Android_install  
+chmod +x setup.sh    
+./setup.sh
+```
 
 ## Requirement to Run Script 
 ### 1- Install burp suite
