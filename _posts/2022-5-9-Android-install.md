@@ -75,3 +75,7 @@ adb shell "/data/local/tmp/frida-server &"
 frida-ls-devices
 frida-ps -U
 ```
+# Future work
+
+Future script to recon and do some daily routine static analysis tasks
+for android recon and recon_profile
